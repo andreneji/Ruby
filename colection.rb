@@ -5,34 +5,27 @@ def expoente
   end
 end
 
+def imprime(qtd = 'Primeiro')
+  print "Digite o #{qtd} número: "
+  num = gets.chomp.to_i
+  @array.push(num)
+end
+
 loop do
   puts 'Programa que calcula o expoente 2'
   print 'Digite 1 p/ calcular, ou 0 p/ sair: '
-
   op = gets.chomp.to_i
 
   if op == 0
     break
   elsif op == 1
-
-    puts 'Digite três números'
-
     @array = []
+    puts 'Digite o(s) número(s)'
 
-    print 'Digite o primeiro número: '
-    num = gets.chomp.to_i
-    @array.push(num)
-
-    print 'Digite o segundo número: '
-    num = gets.chomp.to_i
-    @array.push(num)
-
-    print 'Digite o terceiro número: '
-    num = gets.chomp.to_i
-    @array.push(num)
+    imprime('Segundo')
+    imprime('Terceiro')
 
     system 'clear'
-
     expoente
   else
     system 'clear'
