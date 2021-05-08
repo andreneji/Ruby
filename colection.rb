@@ -1,3 +1,10 @@
+def expoente
+  for a in @array
+    res = "#{a} elevado a 2 = #{a ** 2}"
+    puts res
+  end
+end
+
 loop do
   puts 'Programa que calcula o expoente 2'
   print 'Digite 1 p/ calcular, ou 0 p/ sair: '
@@ -10,27 +17,23 @@ loop do
 
     puts 'Digite três números'
 
-    array = []
+    @array = []
 
     print 'Digite o primeiro número: '
     num = gets.chomp.to_i
-    array.push(num)
+    @array.push(num)
 
     print 'Digite o segundo número: '
     num = gets.chomp.to_i
-    array.push(num)
+    @array.push(num)
 
     print 'Digite o terceiro número: '
     num = gets.chomp.to_i
-    array.push(num)
+    @array.push(num)
 
     system 'clear'
 
-    for a in array
-      res = "#{a} elevado a 2 = #{a ** 2}"
-      puts res
-    end
-
+    expoente
   else
     system 'clear'
     puts 'Opção Inválida'
