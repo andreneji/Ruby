@@ -1,3 +1,10 @@
+# Missão 2
+#
+# Crie uma collection do tipo Hash e permita que o usuário crie três elementos
+# informando a chave e o valor.
+# No final do programa para cada um desses elementos imprima
+# a frase “Uma das chaves é **** e o seu valor é ****”  
+
 def escrever
   print 'Digite uma chave: '
   ch = gets.chomp
@@ -40,4 +47,3 @@ end
 # aaa = Hash.new
 # aaa[:ch] = vl
 # aaa = { ch: vl }
-# puts "Uma das chaves é #{aaa.keys} e o seu valor é #{aaa.values}"

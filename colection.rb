@@ -1,3 +1,9 @@
+# Missão 1
+#
+# Utilizando uma collection do tipo Array,
+# escreva um programa que receba 3 números e
+# no final exiba o resultado de cada um deles elevado a segunda potência.
+
 def expoente
   for a in @array
     res = "#{a} elevado a 2 = #{a ** 2}"
@@ -35,4 +41,3 @@ loop do
     puts 'Opção Inválida'
   end
 end
-
