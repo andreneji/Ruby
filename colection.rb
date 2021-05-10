@@ -5,8 +5,8 @@ def expoente
   end
 end
 
-def imprime(qtd = 'Primeiro')
-  print "Digite o #{qtd} número: "
+def imprime(i)
+  print "Digite o #{i}º número: "
   num = gets.chomp.to_i
   @array.push(num)
 end
@@ -22,8 +22,11 @@ loop do
     @array = []
     puts 'Digite o(s) número(s)'
 
-    imprime('Segundo')
-    imprime('Terceiro')
+    ind=1
+    1..3.times do
+      imprime(ind)
+      ind += 1
+    end
 
     system 'clear'
     expoente
@@ -32,3 +35,4 @@ loop do
     puts 'Opção Inválida'
   end
 end
+
