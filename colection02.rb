@@ -1,5 +1,5 @@
 # Missão 2
-#
+
 # Crie uma collection do tipo Hash e permita que o usuário crie três elementos
 # informando a chave e o valor.
 # No final do programa para cada um desses elementos imprima
@@ -12,7 +12,7 @@ def escrever
   print 'Digite um valor: '
   vl = gets.chomp
 
-  @aaa = { ch => vl }
+  @aaa[ch] = vl
 end
 
 loop do
@@ -25,18 +25,12 @@ loop do
     break
   when 1
     @aaa = {}
-
-    3.times{
-      escrever
-    }
-
+    3.times { escrever }
     system 'clear'
 
-    1..3.times{
     @aaa.each do |key, value|
       puts "Uma das chaves é #{key} e o seu valor é #{value}\n"
     end
-    }
 
   else
     system 'clear'
@@ -46,4 +40,5 @@ end
 
 # aaa = Hash.new
 # aaa[:ch] = vl
+# aaa = { ch => vl }
 # aaa = { ch: vl }
