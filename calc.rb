@@ -1,4 +1,10 @@
-result = nil
+# Aula 03 - Estruturas de Controle
+# Utizando as estruturas de iteração e condição, 
+# crie uma calculadora que ofereça ao usuário a opção de
+# Multiplicar, Dividir, Adicionar ou Subtrair dois números.
+# Não se esqueça de também permitir que o usuário feche o programa.
+
+ result = nil
 loop do
   puts result
   puts 'Selecione uma das seguintes opções'
@@ -33,6 +39,5 @@ loop do
   else
     result = 'Opção inválida'
   end
-  # Comando que limpa o console
   system 'clear'
 end
