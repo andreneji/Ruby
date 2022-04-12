@@ -1,9 +1,9 @@
+# Aula 04 - Collections
 # Missão 2
-
 # Crie uma collection do tipo Hash e permita que o usuário crie três elementos
 # informando a chave e o valor.
 # No final do programa para cada um desses elementos imprima
-# a frase “Uma das chaves é **** e o seu valor é ****”  
+# a frase “Uma das chaves é **** e o seu valor é ****”
 
 def escrever
   print 'Digite uma chave: '
@@ -12,7 +12,7 @@ def escrever
   print 'Digite um valor: '
   vl = gets.chomp
 
-  @aaa[ch] = vl
+  @aaa[ch] = vl                                     # carrega Hash
 end
 
 loop do
@@ -24,11 +24,11 @@ loop do
   when 0
     break
   when 1
-    @aaa = {}
+    @aaa = {}                                       # cria Hash
     3.times { escrever }
     system 'clear'
 
-    @aaa.each do |key, value|
+    @aaa.each do |key, value|                       # varre Hash
       puts "Uma das chaves é #{key} e o seu valor é #{value}\n"
     end
 

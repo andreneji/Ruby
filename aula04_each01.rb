@@ -1,5 +1,6 @@
+# Aula 04 - Collections
 # Missão 1
-# Utilizando uma collection do tipo Array,
+# Utilizando uma collection do tipo array,
 # escreva um programa que receba 3 números e
 # no final exiba o resultado de cada um deles elevado a segunda potência.
 
@@ -15,18 +16,18 @@ loop do
     print 'Digite a qtd. de números que será(ão) calculados: '
     qtd = gets.chomp.to_i
 
-    array = []                            # cria vetor
+    aaa = []                            # cria Array
 
     i = 1
     1..qtd.times do
       print "Digite o #{i}º número: "
-      array.push(gets.chomp.to_i)         # carrega vetor
+      aaa.push(gets.chomp.to_i)         # carrega Array
       i += 1
     end
 
     system 'clear'
-    array.each do |num|                   # varre vetor
-      puts "#{num} elevado a #{exp} = #{num ** exp}"
+    aaa.each do |num|                   # varre Array
+      puts "#{num} elevado a #{exp} = #{num**exp}"
     end
 
   when 0
